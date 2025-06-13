@@ -1,0 +1,27 @@
+mitmproxy==11.0.2
+
+torch==2.5.1
+
+# voice
+sounddevice==0.5.1
+kokoro-onnx==0.4.0
+
+# using Deepgram for the microphone
+deepgram-sdk==3.7.7
+
+# AI stuff
+pydantic==2.11.3
+spacy==3.8.5
+openai==1.83.0
+transformers
+datasets[audio]
+accelerate
+pyaudio
+
+# helpers
+beautifulsoup4==4.12.3
+requests==2.32.3
+Flask==3.1.0
+
+# ticket master
+ticketpy==1.1.2
