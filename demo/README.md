@@ -17,7 +17,9 @@ Python
 pip install -r requirements.txt
 ```
 
-You need to `git clone` the [google Aget2Agent repo](https://github.com/google-a2a/A2A) and do a `pip install -e .`
+> NOTE: It's come to my attention that after building this demo, Google has made changes to their [Aget2Agent repo](https://github.com/google-a2a/A2A). I have updated the link below to use the version pinned to this demo.
+
+You need to `git clone` the [Mirror of Aget2Agent Repo](https://github.com/davidvonthenen/A2A), navigate to the folder `samples/python`, and do a `pip install -e .`
 
 For MacOS/Linux assuming you have already installed xcode developer tools, this also requires brew installing for the Microphone capabilities:
 
@@ -28,6 +30,16 @@ Set the following environment variables:
 - `OPENAI_API_KEY`
 - `BESTBUY_API_KEY`
 - `TICKETMASTER_API_KEY`
+
+I have only tested this use MacOS using these instructions:
+
+1. Open `Settings`
+2. Search for `Proxy`
+3. For HTTP and HTTPS, set your proxy to 127.0.0.1 and port 8080.
+
+> IMPORTANT: For HTTPS which is most websites, you need to follow these instructions to enable a Man-In-The-Middle Attack to snoop your own traffic using [mitmproxy](https://mitmproxy.org/). To handle HTTPS, you need to install certs as defined in this [article](https://askubuntu.com/questions/1465625/proper-way-to-install-mitmproxys-certificates).
+
+This should work on Linux, but I only verified this one MacOs.
 
 ### Best Buy Platform API
 
@@ -63,8 +75,6 @@ Download the following files from their GitHub page:
 
 ### Setup and Running the Demo
 
-Set your MacOS Proxy for both HTTP and HTTPS to 127.0.0.1 and port 8080.
-
 In 5 different consoles, run:
 
 - ./run.sh
@@ -82,8 +92,6 @@ This is going to run better on a system without a GPU.
 Visit [Deepgram](https://www.deepgram.com/) and create an account.
 
 ### Setup and Running the Demo
-
-Set your MacOS Proxy for both HTTP and HTTPS to 127.0.0.1 and port 8080.
 
 In 5 different consoles, run:
 
